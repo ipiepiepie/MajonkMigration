@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "uuidfix",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "MajonkMigration",
+  "description": "Now ya can authenticate your UUID",
   "authors": [
-    "Turnip Labs"
+    "ipiepiepie"
   ],
   "contact": {
     "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/ipiepiepie/MajonkMigration"
   },
 
 	"icon": "icon.png",
@@ -19,20 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
-    ],
-		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
-		],
-		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
-		],
-		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
-		]
+			"xyz.ipiepiepie.migration.MigrationMod"
+    ]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"migration.mixins.json"
   ],
 
   "depends": {
